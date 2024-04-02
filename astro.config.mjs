@@ -25,6 +25,18 @@ const whenExternalScripts = (items = []) =>
     : [];
 
 export default defineConfig({
+  output: 'hybrid',
+  trailingSlash: 'ignore',
+      redirects: {
+    '/ar/': '/ar',
+  },
+    i18n: {
+    defaultLocale: "en",
+    locales: ["en", "ar"],
+        routing: {
+        prefixDefaultLocale: false
+    }
+  },
   output: 'static',
 
   integrations: [

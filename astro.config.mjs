@@ -25,7 +25,7 @@ const whenExternalScripts = (items = []) =>
     : [];
 
 export default defineConfig({
-  output: 'hybrid',
+  output: 'static',
   trailingSlash: 'ignore',
       redirects: {
     '/ar/': '/ar',

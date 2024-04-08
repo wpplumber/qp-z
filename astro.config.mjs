@@ -37,8 +37,6 @@ export default defineConfig({
         prefixDefaultLocale: false
     }
   },
-  output: 'static',
-
   integrations: [
     tailwind({
       applyBaseStyles: false,
